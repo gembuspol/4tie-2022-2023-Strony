@@ -1,0 +1,41 @@
+header{
+    background-color: chocolate;
+    width: 50%;
+}
+main{
+    margin: 10px;
+    margin-right: 50px;
+    background-color: royalblue;
+    padding: 10px;
+    padding-right: 50px;
+}
+.prawy{
+    background-color: burlywood;
+    width: 20%;
+    float: right;
+}
+.srodek{
+    background-color: darkturquoise;
+    width: 60%;
+    float: left;
+}
+.lewy{
+    background-color: khaki;
+    width: 20%;
+    float: left;
+}
+.dol{
+    background-color: limegreen;
+    width: 100%;
+    clear: both;
+}
+.srodek:hover {
+    background-color:brown;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.pudelko{
+    background-color:darkgrey;
+    width: 75%;
+    margin: auto;
+}
