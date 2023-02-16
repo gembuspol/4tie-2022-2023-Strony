@@ -21,6 +21,7 @@
 <body>
     <header>Znaczniki HTML </header>
     <section>
+        <a name="poczatek"></a>
         <h1>Lista znaczników</h1>
         <ol>
             <li>znacznik dołączenia obrazu "&lt;img src="adres" title="tytul wyswietlany po najechaniu myszką" alt="tekst alternatywny"   &gt;"</li>
@@ -45,6 +46,7 @@
                 type="i" - lista z cyframi małymi rzymskimi<br>
             </li>
             <li>
+                <a name="tabele"></a>
                 Tabele<br>
                 <ol type="a">
                     <li>znacznik tabeli "&lt;table&gt; i &lt;/table&gt;"</li>
@@ -57,6 +59,24 @@
                     <li>łączenie komórek w poziomie (kolumnami) colspan="ilość" "&lt;td colspan="3"&gt;"</li>
                     <li>łączenie komórek w pionie (wierszami) rowspan="ilosc" "&lt;td rowspan="3"&gt;"</li>
                 </ol>
+            </li>
+            <li>
+                Znaczniki grupujące do oznaczania rysunków - znacznik "&lt;figure&gt; i &lt;/figure&gt;" - oznacza blok elementów, w którym wprowadzamy zdjęcię za pomocą znacznika "&lt;img&gt;", a następnie dodajemy podpis za pomocą znacznika "&lt;figcaption&gt; i &lt;/figcaption&gt;"
+            </li>
+            <li>
+                Odsyłacz - przenosi nas do innej strony lub innego miejsca na stronie "&lt;a href="adres odnosnika"&gt; i &lt;/a&gt;" <br>
+                Można go tworzyć jako tekst, grafika (znacznik img wewnątrz znaczników), przycisk
+            </li>
+            <li>
+                Zakładka - miejsce do któego może poprowadzić odnośnik  "&lt;a name="nazwa odnosnika"&gt; i &lt;/a&gt;"
+                <br>
+                Aby odwołać się do odnośnika w nazwie na początku dodajemy # np. "&lt;a href="#odnosnik"&gt; i &lt;/a&gt;"
+            </li>
+            <li>
+                Mapa odsyłaczy - pozwala na zdefiniowanie obszaru, w które klikniecie przeniesie użytkownika w adres w podany w linku.
+                <br>
+                "&lt;map"&gt; i &lt;/map&gt;" - definujemy obszar mapy a w nim szczegóły
+                "&lt;area shape"kształt - rect, circle" coords="współrzędne końcowych punktów href="odnośnik" &gt;"
             </li>
         </ol>
     </section>
@@ -94,6 +114,20 @@
                 </tr>
             </tbody>
         </table>
+    </section>
+    <section>
+        <h2> zdjęcię z podpisem</h2>
+        <figure>
+            <img src="tiger.jpg" title="Czołg Tiger" alt="tiger obrazek">
+            <figcaption>To jest Tiger</figcaption>
+        </figure>  
+    </section>
+    <section>
+        <img src="tiger.jpg" title="Czołg Tiger" alt="tiger obrazek" width="100" height="100" usermap="#mapa">
+        <map name="mapa">
+            <area shape="rect" coords="0,0,50,100" href="#poczatek" alt="dane">
+            
+        </map>
     </section>
     <footer>
         Stronę wykonał Przemek
