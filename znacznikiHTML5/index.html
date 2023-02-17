@@ -122,7 +122,7 @@
                         "&lt;legend&gt; i &lt;/legend&gt;" - nagłówek/nazwa grupy elementów
                     </li>
                     <li>
-                        "&lt;select&gt; i &lt;/select&gt;" - pole wyboru, elementy wypisujemy za pomocą zancznika "&lt;option&gt; i &lt;/option&gt;"
+                        "&lt;select&gt; i &lt;/select&gt;" - pole wyboru, elementy wypisujemy za pomocą znacznika "&lt;option&gt; i &lt;/option&gt;"
                         <br>
                         Atrybuty pola select: <br>
                         size="n" - określa liczbę widocznych pozycji na liście <br>
@@ -131,7 +131,71 @@
                         Atrybuty dla znacznika option:<br>
                         selected="selected" - ta opcja jest domyślnie wybrana<br>
                         value="wartość" - wartość przekazywana przez formularz 
+                        <br><br>
+                        "&lt;optgroup&gt; i &lt;/optgroup&gt;" - stworzenie wielopozimowej listy, atrybut label okresla nazwę poziomu
                     </li>
+                    <li>
+                        "&lt;textarea&gt; i &lt;/textarea&gt;" - pozwala na wprowadzenie większej ilości tekstu. Atrybutami są rows="" - ilość wierszy, cols="" - ilość kolumn (znaków) w polu tekstowym.
+                    </li>
+                    <li>
+                        Atrybut "disabled" - dana kontrolka jest nieaktywna - nie można wpisać danych lub kliknąć w kontrolkę.
+                    </li>
+                    <li>
+                        Atrybut "accesskey" - przypisanie skrótu klawiszowego do kontrolki formularza
+                    </li>
+                    <li>
+                        "&lt;datalist&gt; i &lt;/datalist&gt;" - podobne do pola select ale pozwala na wprowadzanie tekstu do pola lub wybranie z dostępnej listy, elementy do wyboru wpisuje się w znaczniku "option"
+                    </li>
+                    <li>
+                        Atrybut "autofocus" - automatycznie ustawienie kursowa w wybranym polu
+                    </li>
+                    <li>
+                        Atrybut "autocomplete" - zezwala lub nie zezwala na autouzupełnia przez przeglądarkę, domyślnie jest włączone
+                    </li>
+                    <li>
+                        Atrybut "required" - wypełnienie danego pola formularza jest wymagane
+                    </li>
+                    <li>
+                        Atrybut "pattern" - stosuje się go do walidacji (sprawdzania wprawadzonych) danych
+                    </li>
+                </ol>
+            </li>
+            <li>
+                "&lt;video&gt; i &lt;/video&gt;" - pozwala na umieszczenie filmu na stronie, określamy również wysokość i szerokość wstawionego filmu. Żródło filmu podajemy w znaczniku "&lt;source src=""&gt;"
+            </li>
+            <li>
+                "&lt;audio&gt; i &lt;/audio&gt;" - pozwala na umieszczenie muzyki na stronie, Źródła umieszczamy miedzy znacznikami audio stosując znacznik "&lt;source&gt;"
+            </li>
+            <li>
+                "&lt;canvas&gt; i &lt;/canvas&gt;" - miejsce do rysowania obrazów, wykresów. Rysunki są umieszczane zazwyczaj za pomocą JavaScript lub CSS
+            </li>
+            <li>
+                "&lt;embed&gt; i &lt;/embed&gt;" - umieszczanie plików multimedialnych na stronie, zazwyczaj te elementy potrzebują wtyczek w przeglądarce
+            </li>
+            <li>
+                "&lt;object&gt; i &lt;/object&gt;" - umieszczanie obiektu na stronie, może to być plik multimedialne ale również inna strona www
+            </li>
+            <li>
+                Zdarzenia wewnętrzne html:
+                <ol type="a">
+                    <li>"onclick" - gdy klikniemy myszą</li>
+                    <li>"ondbclick" - gdy dwukrotnie klikniemy myszką</li>
+                    <li>"onmousedown" - gdy przycisk myszki zostanie wciścięty</li>
+                    <li>"onmouseup" - gdy przycisk myszki zostanie puszczony</li>
+                    <li>"onmouseover" - gdy kursor myszy zostanie umieszczony na elemencie</li>
+                    <li>"onmousemove" - gdy kursor myszy zostanie przesunięty wewnątrz elementu</li>
+                    <li>"onmouseout" - - gdy kursor myszy zostanie usunięty z elementu</li>
+                    <li>"onkeypress" - gdy klawisz klawiatury zostanie naciśnięty i zwolniony</li>
+                    <li>"onkeydown" - gdy klawisz klawiatury zostanie naciśnięty</li>
+                    <li>"onkeyup" - gdy klawisz klawiatury zostanie zwolniony</li>
+                    <li>"onfocus" - gdy element został wybrany</li>
+                    <li>"onblur" - gdy opuszczamy element (wychodzimy z niego, klikamy w inny)</li>
+                    <li>"onselect" - gdy został zaznaczony w polu tekstowy tekst</li>
+                    <li>"onchage" - gdy element zmienia wartość</li>
+                    <li>"onsubmit" - gdy wysłano formularz</li>
+                    <li>"onreset" - gdy zresetowano formularz</li>
+                    <li>"onload" - gdy dokument został wczytany (strona została załadowana)</li>
+                    <li>"onunload" - gdy dokument nie został załadowany</li>
                 </ol>
             </li>
         </ol>
