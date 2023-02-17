@@ -78,6 +78,62 @@
                 "&lt;map"&gt; i &lt;/map&gt;" - definujemy obszar mapy a w nim szczegóły
                 "&lt;area shape"kształt - rect, circle" coords="współrzędne końcowych punktów href="odnośnik" &gt;"
             </li>
+            <li>
+                Formularze
+                <br>
+                <ol type="a">
+                    <li>
+                        "&lt;form&gt; i &lt;/form&gt;" - znacznik otwierający i zamykający formularz
+                        <br>
+                        Parametry:<br>
+                        action="adres" - ustalamy adres na który przesyłamy dane z formularza - inna strona może przetwarzać dane z formularza z tej strony.<br>
+                        method="POST / GET" - ustalamy sposób przesyałania danych przez formularz. GET - przesyałanie za pomocą jawnego teksu w adresie strony, POST przesyłanie za pomocą ukrytego tekstu.<br>
+                        encrypte="multipart/form-data" - kodowanie przesyłanych danych, występuje tylko wraz z metodą POST, domyślnie jest wyłączone.
+
+                    </li>
+                    <li>
+                        "&lt;input&gt; i &lt;/input&gt;" - znacznik do wprowadzania danych w zależności od określonego typu <br>
+                        Atrybuty:<br>
+                        name="" - określa nazwę pola i nazwę zmiennej, do której zostanie wprowadzona wartość z formularza. <br>
+                        value="" - określa domyślną wartość pola<br>
+                        size="" - określa liczbę znaków mieszczących się w widocznym polu <br>
+                        maxlenght="" - określa maksymalną liczbę znaków, jaką możemy wpisać do pola <br>
+                        type=""- typ pola input<br>
+                        Typy pól input<br>
+                        <ul>
+                            <li>"text" - pozwala na wprowadzenie tekstu</li>
+                            <li>"number" - pozwala na wprowadzanie tylko liczb</li>
+                            <li>"chceckbox" - pole do zaznczenia opcji</li>
+                            <li>"radio" - pole wyboru opcji</li>
+                            <li>"password" - pole do wpisywania hasła - ukrywa znaki</li>
+                            <li>"submit" - przycisk do zatwierdzenia i przesłania danych z formularza</li>
+                            <li>"reset" - pole do wyczyszczenia danych z formularza</li>
+                            <li>"file" - dołączenie pliku do formularza</li>
+                            <li>"hidden" - ukryte pole, nie wyświetla się na formularzu ale przesyła dane z formularze</li>
+                            <li>"button" - przycisk w formularzu, wywołujący jakąś funkcje</li>
+                            <li>"color" - pole do wybrania koloru z palety</li>
+                            <li>"email" - pole do wpisanai emaila - sprawdza poprawną składnie adresu</li>
+                            <li>"date" - pozwala wpisać lub wybrać datę z kalendarza</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Grupowanie elementów formularza<br>
+                        "&lt;fieldset&gt; i &lt;/fieldset&gt;" - określa ramy utworzonej grupy elementów <br>
+                        "&lt;legend&gt; i &lt;/legend&gt;" - nagłówek/nazwa grupy elementów
+                    </li>
+                    <li>
+                        "&lt;select&gt; i &lt;/select&gt;" - pole wyboru, elementy wypisujemy za pomocą zancznika "&lt;option&gt; i &lt;/option&gt;"
+                        <br>
+                        Atrybuty pola select: <br>
+                        size="n" - określa liczbę widocznych pozycji na liście <br>
+                        multiple - można zaznaczyć wiele opcji z listy <br>
+                        <br>
+                        Atrybuty dla znacznika option:<br>
+                        selected="selected" - ta opcja jest domyślnie wybrana<br>
+                        value="wartość" - wartość przekazywana przez formularz 
+                    </li>
+                </ol>
+            </li>
         </ol>
     </section>
     <section>
