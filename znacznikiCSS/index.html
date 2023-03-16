@@ -296,5 +296,117 @@
         <li>pre-wrap - łączenie kilku spacji, linia przechodzi do nowego wiersza w miejscu gdzie jest Enter</li>
         <li>pre-line - łączenie kilku spacji, linia przechodzi do nowego wierdsza w miejscu gdzie jest enter i automatycznie względem szerokości strony </li>
     </ol>
+    <h2>Tło i kolor</h2>
+    <h3>color</h3>
+    <p>ustawienei koloru tekstu. Można go ustawić dla paragrafu, sekcji, całej strony</p>
+    <h3>background-color</h3>
+    <p>ustawienie koloru tła elementu</p>
+    <h3>background-image</h3>
+    <p>ustawienie obrazu jako tło</p>
+    <h3>background-repeat</h3>
+    <p>ustawienie tła jako powtarzającego się zdjecia. Wystepuje po atrybucie backgroud-image i może przyjmować następujące wartości</p>
+    <ul>
+        <li>repeat - powtarzanie zdjęcia w obu kierunkach</li>
+        <li>repeat-x - powtarzanie w kierunku osi x - poziomo</li>
+        <li>repeat-y - powtarzanie w kierunku osi y - pionowo</li>
+        <li>no-repeat - nie powtarzanie tła</li>
+    </ul>
+    <h3>background-attachment</h3>
+    <p>blokowanie tła w trakcie przwijania strony - strona musi posiadać suwaki. Może przyjmowac następujące wartości:</p>
+    <ul>
+        <li>scroll - przewijanie tła</li>
+        <li>fixed - tło nieruchome względem przeglądarki</li>
+        <li>local - tło nieruchome względem elementu dla którego zostało zdefiniowane</li>
+    </ul>
+    <h3>background-position</h3>
+    <p>domyślnie grafika tła jest ustawiona w lewym górnym rogu, za pomocą tego znacznika można zmienić jej pozycje. Może przyjmować wartosci:</p>
+    <ul>
+        <li>center - grafika w środku</li>
+        <li>left - grafika z lewej strony</li>
+        <li>right - grafika z prawej strony</li>
+        <li>top- grafika z góry</li>
+        <li>bottom -grafika z dołu</li>
+        <li>jednostka długości - określenie położenia od lewego marginesu</li>
+        <li>left top - grafika w lewym górnym rogu</li>
+        <li>left bottom - grafika w lewym dolnym rogu</li>
+        <li>right top - grafika w prawym górnym rogu</li>
+        <li>right bottom - grafika w prawym dolnym rogu</li>
+    </ul>
+    <h3>backgroud: none;</h3>
+    <p>powoduej usunięcie tła</p>
+    <h3>backgroud</h3>
+    <p>możliwośc ustawienia kilku atrybutów dotyczących tła takich jak np. kolor, pozycja itd. Elementy rozdzielamy spacją</p>
+    <h2>Obramowania</h2>
+    <h3>border-width</h3>
+    <p>określenie szerokości obramowania. W zależności od ilości wartości określamy szerokość obramowania </p>
+    <ol>
+        <li>Jedna podana wartośc to dotyczy wszystkich krawędzi</li>
+        <li>dwie wartości po spacji - pierwsza dotyczy krawędzi poziomych druga do krawędzi pionowych</li>
+        <li>trzy wartości oddzielone spacjami - pierwsza krawędź górna, druga dotyczy krawędzi pionowych, trzecia krawędzi dolnej</li>
+        <li>cztery wartości podane - określają kolejno:górnej, prawej, dolnej i lewej</li>
+    </ol>
+    <p>Szerokośc krawędzi możemy określić za pomocą:</p>
+    <ul>
+        <li>jednostka miary - określamy szerokość</li>
+        <li>thin - cienkie obramowania</li>
+        <li>medium - średnie obramowanie</li>
+        <li>thick - grube obramowanie</li>
+    </ul>
+    <p>można również określać szerokość dla pojedynczych krawędzi:</p>
+    <ul>
+        <li>border-left-width</li>
+        <li>border-right-width</li>
+        <li>border-top-width</li>
+        <li>border-bottom-width</li>
+    </ul>
+    <h3>border-style</h3>
+    <p>określa styl obramowania. Przyjmuje wartości tak jak border-width jeżeli chodzi o określenie dla konkretnej krawędzi. Dodatkowe atrybuty stylów</p>
+    <ul>
+        <li>none - brak obramowania</li>
+        <li>hidden - obramowanie ukryte</li>
+        <li>dotted - linia kropkowana</li>
+        <li>dashed - linia kreskowana</li>
+        <li>solid- linia ciągła</li>
+        <li>double - linia ciągła podwójna</li>
+        <li>groove - "rewerek"</li>
+        <li>ridge - "grzbiet"</li>
+        <li>inset - "ramka"</li>
+        <li>outset - "przycisk"</li>
+    </ul>
+    <h3>border-color</h3>
+    <p>określenie koloru obramowania - selektor przyjmuje ustawienia poszczególnych krawędzi tak jak w końcowej części border-width</p>
+    <h3>border</h3>
+    <p>pozwala na okreslenie kilku właściwości obramowania po wpisaniu ich jako wartości, rozdzielamy je spacją</p>
+    <h2>Marginesy zewnętrzne</h2>
+    <h3>margin-top margin-bottom margin-right margin-left</h3>
+    <p>określenie szerokości marginesów w zależności od strony</p>
+    <h3>margin</h3>
+    <p>określenie wszystkich marginesów. Można ustawić je w zależności od ilości wartości podanych w selektorze: </p>
+    <ol>
+        <li>Jedna podana wartośc to dotyczy wszystkich krawędzi</li>
+        <li>dwie wartości po spacji - pierwsza dotyczy krawędzi poziomych druga do krawędzi pionowych</li>
+        <li>trzy wartości oddzielone spacjami - pierwsza krawędź górna, druga dotyczy krawędzi pionowych, trzecia krawędzi dolnej</li>
+        <li>cztery wartości podane - określają kolejno:górnej, prawej, dolnej i lewej</li>
+    </ol>
+    <h2>Marginesy wewnętrzne</h2>
+    <h3>padding-top padding-bottom padding-right padding-left</h3>
+    <p>określenie szerokości marginesów wewnętrznych w zależności od strony</p>
+    <h3>padding</h3>
+    <p>określenie wszystkich marginesów. Można ustawić je w zależności od ilości wartości podanych w selektorze: </p>
+    <ol>
+        <li>Jedna podana wartośc to dotyczy wszystkich krawędzi</li>
+        <li>dwie wartości po spacji - pierwsza dotyczy krawędzi poziomych druga do krawędzi pionowych</li>
+        <li>trzy wartości oddzielone spacjami - pierwsza krawędź górna, druga dotyczy krawędzi pionowych, trzecia krawędzi dolnej</li>
+        <li>cztery wartości podane - określają kolejno:górnej, prawej, dolnej i lewej</li>
+    </ol>
+    <h2>Obrys</h2>
+    <h3>outline</h3>
+    <p>obramowanie wokół elementu które rózni sie od obramowania tym:</p>
+    <ul>
+        <li>nie zajmuje miejsca, nie wpływa na rozmiar elementu</li>
+        <li>jest tworzony na wierzchu elementu</li>
+        <li>jest definiowany dla wszystkich krawędzi jednocześnie</li>
+
+    </ul>
 </body>
 </html>
